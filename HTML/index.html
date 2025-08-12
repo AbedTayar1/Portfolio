@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/IMAGES/linkedinImages.jpeg">
+    <title>Software-Engineer Portfolio</title>
+</head>
+
+<body>
+    <div class="animated-background">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__brand">
+                    <img src="/IMAGES/linkedinImages.jpeg" alt="Abed Tayar" class="brand__image">
+                    <span><a href="#intro">ABED TAYAR</a></span>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#intro">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#intro" onclick="closeMobileMenu()">HOME</a></li>
+                <li><a href="#about" onclick="closeMobileMenu()">ABOUT</a></li>
+                <li><a href="#projects" onclick="closeMobileMenu()">PROJECTS</a></li>
+                <li><a href="#skills" onclick="closeMobileMenu()">SKILLS</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <section id="intro" class="intro">
+            <h1>HEY, I'M ABED TAYAR</h1>
+            <p>Software Engineer passionate about building clean, efficient, and scalable solutions that make a
+                difference.</p>
+            <button onclick="downloadCV()">Download CV</button>
+        </section>
+
+        <div class="social-sidebar">
+            <a href="https://github.com/AbedTayar1" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abedtayar/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:abed.tayar@example.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <hr class="section-divider">
+
+        <section id="about" class="about">
+            <div class="about__container">
+                <h2>About Me</h2>
+                <p>
+                    I'm a passionate Software Engineer with a love for creating intuitive, high-performance software
+                    solutions that solve real-world problems. With expertise in modern technologies and a keen eye
+                    for detail, I strive to write clean, maintainable code.
+                    <br><br>
+                    When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and
+                    continuously expanding my skill set. I believe in the power of collaboration and am always eager to
+                    learn from others while sharing my knowledge with the developer community.
+                    <br><br>
+                    My goal is to build meaningful software that not only meets technical requirements but also provides
+                    exceptional user experiences that make a positive impact.
+                </p>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <p class="highlight">C, Python, Java, JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p class="highlight">React.js, HTML5, CSS3, Tailwind CSS</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <p class="highlight">Node.js, Express.js, Firebase</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <p class="highlight">Firestore, MySQL</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools & DevOps</h3>
+                    <p class="highlight">Git, GitHub,JUnit</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Course Enrollment Management System (CEMS)</h3>
+                <p>
+                    Team-based system for managing course registration, schedules, and approvals.
+                    I led code reviews and architecture decisions, and implemented core RESTful API
+                    endpoints and the database layer.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">JDBC</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">JavaFX</span>
+                    <span class="tech-tag">REST API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/fredi1574/CEMS-GroupProject" class="project-link" target="_blank"
+                        rel="noopener">
+                        <i class="fa-brands fa-github"></i> Code
+                    </a>
+                    <!-- אם יהיה לך דמו חי/וידאו, תוסיף כאן:
+    <a href="https://your-demo-url" class="project-link" target="_blank" rel="noopener">
+      <i class="fa-solid fa-external-link-alt"></i> Live Demo
+    </a> -->
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <p>
+                I'm always interested in new opportunities and exciting projects.
+                Whether you want to discuss a potential collaboration.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:abed.tayar@example.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    Send Email
+                </a>
+                <a href="https://www.linkedin.com/in/abedtayar/" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin-in"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/AbedTayar1" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Abed Tayar. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="/JS/index.js"></script>
+
+</html>
