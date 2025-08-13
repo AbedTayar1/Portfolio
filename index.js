@@ -15,7 +15,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 function downloadCV() {
     const link = document.createElement('a');
-    link.href = '/FILES/Abed Tayar - Software Engineer.pdf';
+    link.href = 'Abed Tayar - Software Engineer.pdf';
     link.download = 'Abed Tayar - Software Engineer.pdf';
     link.click();
 }
